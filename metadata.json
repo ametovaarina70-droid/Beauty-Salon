@@ -1,0 +1,6 @@
+{
+  "name": "ATELIER LUMA • Beauty Salon Prague",
+  "description": "Minimalist luxury beauty salon in Prague. Multilingual online booking, portfolio gallery, curated price list, and AI concierge.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
