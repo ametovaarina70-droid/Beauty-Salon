@@ -453,6 +453,62 @@ export const INITIAL_GALLERY: GalleryPost[] = [
     comments: 0,
     timestamp: '',
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'nails-sheer-glazed-manicure',
+    image: '/gallery/nails-sheer-glazed-manicure.webp',
+    category: 'nails',
+    caption: {
+      cs: 'Průsvitná manikúra s perleťovým leskem',
+      en: 'Sheer glazed manicure',
+      ru: 'Прозрачный маникюр с жемчужным блеском'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'nails-burgundy-short-manicure',
+    image: '/gallery/nails-burgundy-short-manicure.webp',
+    category: 'nails',
+    caption: {
+      cs: 'Vínová manikúra na krátkých nehtech',
+      en: 'Burgundy manicure on short nails',
+      ru: 'Бордовый маникюр на коротких ногтях'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'nails-pearl-manicure-pedicure',
+    image: '/gallery/nails-pearl-manicure-pedicure.webp',
+    category: 'nails',
+    caption: {
+      cs: 'Perleťová manikúra a pedikúra v jednom tónu',
+      en: 'Matching pearl manicure and pedicure',
+      ru: 'Жемчужный маникюр и педикюр в одном тоне'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'nails-french-pedicure',
+    image: '/gallery/nails-french-pedicure.webp',
+    category: 'nails',
+    caption: {
+      cs: 'Pedikúra s francouzskou úpravou',
+      en: 'French pedicure',
+      ru: 'Педикюр с френчем'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
   }
 ];
 
