@@ -343,31 +343,73 @@ export const SALON_MASTERS: MasterSpecialist[] = [
 
 export const INITIAL_GALLERY: GalleryPost[] = [
   {
-    id: 'ig-post-1',
-    image: 'https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1000&q=85',
+    id: 'hair-balayage-soft',
+    image: '/gallery/hair-balayage-soft.webp',
     category: 'hair',
     caption: {
-      cs: 'Airtouch Signature v odstínu perlový led. 4 hodiny precizní práce pro Terezu. #atelierluma #praguehair #airtouchprague',
-      en: 'Airtouch Signature in Pearl Ice. 4 hours of pure precision craft. #atelierluma #praguehair #airtouchprague',
-      ru: 'Фирменный Airtouch в холодном жемчужном оттенке. Мягкий переход и абсолютный шелк волос. #atelierluma #prague'
+      cs: 'Jemný balayage na tmavě plavé bázi',
+      en: 'Soft balayage on a dark blonde base',
+      ru: 'Мягкий балаяж на тёмно-русой базе'
     },
-    likes: 384,
-    comments: 29,
-    timestamp: '2h ago',
+    likes: 0,
+    comments: 0,
+    timestamp: '',
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
   },
   {
-    id: 'ig-post-2',
-    image: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=1000&q=85',
+    id: 'hair-blonde-bob',
+    image: '/gallery/hair-blonde-bob.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Béžová blond s jemným kořínkem, rovný střih',
+      en: 'Beige blonde with a soft root, sleek lob',
+      ru: 'Бежевый блонд с мягким корнем, удлинённое каре'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'hair-brunette-curtain-bangs',
+    image: '/gallery/hair-brunette-curtain-bangs.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Vrstvený střih s ofinou, čokoládová brunetka',
+      en: 'Layered cut with curtain bangs, deep brunette',
+      ru: 'Многослойная стрижка с шторкой, глубокий брюнет'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'hair-chocolate-waves',
+    image: '/gallery/hair-chocolate-waves.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Objemový styling, čokoládový odstín',
+      en: 'Voluminous blowout waves, chocolate shade',
+      ru: 'Объёмная укладка волнами, шоколадный оттенок'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'nails-pink-pedicure',
+    image: '/gallery/nails-pink-pedicure.webp',
     category: 'nails',
     caption: {
-      cs: 'Čistý minimalismus. Mléčná báze s mikro-třpytem a hloubková suchá manikúra. #nailsprague #vinohrady',
-      en: 'Pure minimalism. Milky sheer base with subtle micro-shimmer and dry cuticle treatment. #nailsprague',
-      ru: 'Минимализм вне времени: молочный нюд и безупречная чистота кутикулы. #маникюрпрага'
+      cs: 'Pedikúra s jemně růžovým lakem',
+      en: 'Pedicure in soft blush pink',
+      ru: 'Педикюр с нежно-розовым покрытием'
     },
-    likes: 412,
-    comments: 34,
-    timestamp: '5h ago',
+    likes: 0,
+    comments: 0,
+    timestamp: '',
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
   },
   {
@@ -396,34 +438,6 @@ export const INITIAL_GALLERY: GalleryPost[] = [
     likes: 521,
     comments: 42,
     timestamp: '2d ago',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
-    id: 'ig-post-5',
-    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=85',
-    category: 'hair',
-    caption: {
-      cs: 'Francouzská balayage v teplých medových tónech pro podzimní Prahu. #balayageprague #davines',
-      en: 'French balayage in rich honey and beige undertones for golden autumn in Vinohrady. #balayageprague',
-      ru: 'Медовый балаяж с мягким контурингом у лица. Идеальная глубина цвета на фоне Праги.'
-    },
-    likes: 467,
-    comments: 26,
-    timestamp: '3d ago',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
-    id: 'ig-post-6',
-    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=85',
-    category: 'nails',
-    caption: {
-      cs: 'Japonská manikúra P-Shine. Zdravé, pevné nehty s přírodním leskem bez chemických laků. #pshine #ecobeauty',
-      en: 'Japanese P-Shine technique. Deep mineral nourishment for glossy chemical-free nails. #pshine',
-      ru: 'Японский эко-глянец P-Shine: пчелиный воск, морские минералы и шелковистая текстура.'
-    },
-    likes: 350,
-    comments: 15,
-    timestamp: '4d ago',
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
   }
 ];
