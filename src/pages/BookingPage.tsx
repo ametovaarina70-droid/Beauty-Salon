@@ -114,18 +114,12 @@ export const BookingPage: React.FC<BookingPageProps> = ({
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
       {/* Title */}
       <div className="text-center max-w-2xl mx-auto space-y-3 mb-10">
-        <span className="text-xs uppercase tracking-widest font-semibold text-[#8C7A6B]">
-          {language === 'cs' ? 'Rychlá rezervace' : language === 'ru' ? 'Моментальная бронь' : 'Instant Reservation'}
-        </span>
         <h1 className="font-serif text-4xl sm:text-5xl text-stone-900 font-normal">
           {t.booking.title}
         </h1>
-        <p className="text-stone-600 text-sm font-light">
-          {t.booking.subtitle}
-        </p>
       </div>
 
       {/* Wizard Progress Steps Bar */}
@@ -162,9 +156,6 @@ export const BookingPage: React.FC<BookingPageProps> = ({
             <h2 className="font-serif text-2xl text-stone-900 font-medium">
               {t.booking.selectService}
             </h2>
-            <span className="text-xs text-stone-500 font-light">
-              {SALON_SERVICES.length} {language === 'cs' ? 'služeb k dispozici' : language === 'ru' ? 'доступных услуг' : 'treatments available'}
-            </span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -182,15 +173,9 @@ export const BookingPage: React.FC<BookingPageProps> = ({
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div>
-                      <span className="text-[10px] uppercase font-bold tracking-wider text-[#8C7A6B]">
-                        {t.services.categories[service.category]}
-                      </span>
-                      <h3 className="font-serif text-lg font-medium text-stone-900 mt-0.5">
+                      <h3 className="font-serif text-lg font-medium text-stone-900">
                         {service.name[language]}
                       </h3>
-                      <p className="text-xs text-stone-500 line-clamp-2 mt-1">
-                        {service.description[language]}
-                      </p>
                     </div>
 
                     <div

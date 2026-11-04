@@ -127,26 +127,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               {t.contacts.hoursSun}
             </p>
 
-            <div className="pt-2">
-              <span className="text-[11px] text-stone-500 uppercase tracking-wider block mb-1">
-                Jazyk / Language / Язык:
-              </span>
-              <div className="flex gap-2 text-xs font-medium">
-                {(['cs', 'en', 'ru'] as Language[]).map((lang) => (
-                  <button
-                    key={lang}
-                    onClick={() => setLanguage(lang)}
-                    className={`px-2.5 py-1 rounded uppercase transition cursor-pointer ${
-                      language === lang
-                        ? 'bg-white text-stone-900 font-bold'
-                        : 'bg-stone-900 text-stone-400 hover:text-white'
-                    }`}
-                  >
-                    {lang}
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
