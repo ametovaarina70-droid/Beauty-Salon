@@ -509,6 +509,76 @@ export const INITIAL_GALLERY: GalleryPost[] = [
     comments: 0,
     timestamp: '',
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'brows-lamination-fluffy',
+    image: '/gallery/brows-lamination-fluffy.webp',
+    category: 'brows',
+    caption: {
+      cs: 'Laminace obočí: přirozený nadýchaný tvar',
+      en: 'Brow lamination: natural fluffy shape',
+      ru: 'Ламинирование бровей: естественная пушистая форма'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'brows-lashes-sculpted',
+    image: '/gallery/brows-lashes-sculpted.webp',
+    category: 'brows',
+    caption: {
+      cs: 'Upravené obočí a natočené řasy',
+      en: 'Sculpted brows and lifted lashes',
+      ru: 'Оформленные брови и подкрученные ресницы'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'brows-lashes-lamination-before-after',
+    image: '/gallery/brows-lashes-lamination-before-after.webp',
+    category: 'brows',
+    caption: {
+      cs: 'Laminace obočí a řas: před a po',
+      en: 'Brow and lash lamination: before and after',
+      ru: 'Ламинирование бровей и ресниц: до и после'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'brows-shaping-process',
+    image: '/gallery/brows-shaping-process.webp',
+    category: 'brows',
+    caption: {
+      cs: 'Úprava tvaru obočí',
+      en: 'Brow shaping',
+      ru: 'Коррекция формы бровей'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'brows-lashes-full-look',
+    image: '/gallery/brows-lashes-full-look.webp',
+    category: 'brows',
+    caption: {
+      cs: 'Obočí a řasy: hotový look',
+      en: 'Brows and lashes: the finished look',
+      ru: 'Брови и ресницы: готовый образ'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
   }
 ];
 
