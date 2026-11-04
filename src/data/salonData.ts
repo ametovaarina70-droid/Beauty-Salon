@@ -455,6 +455,62 @@ export const INITIAL_GALLERY: GalleryPost[] = [
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
   },
   {
+    id: 'hair-styling-hollywood-waves-blonde',
+    image: '/gallery/hair-styling-hollywood-waves-blonde.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Styling: hollywoodské vlny',
+      en: 'Styling: Hollywood waves',
+      ru: 'Укладка: голливудские волны'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'hair-styling-volume-blowout-bw',
+    image: '/gallery/hair-styling-volume-blowout-bw.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Styling: objemové foukání',
+      en: 'Styling: voluminous blowout',
+      ru: 'Укладка: объёмный брашинг'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'hair-styling-soft-waves-brunette',
+    image: '/gallery/hair-styling-soft-waves-brunette.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Styling: měkké vlny na tmavých vlasech',
+      en: 'Styling: soft waves on brunette hair',
+      ru: 'Укладка: мягкие волны на тёмных волосах'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'hair-styling-french-twist',
+    image: '/gallery/hair-styling-french-twist.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Styling: francouzský drdol',
+      en: 'Styling: French twist',
+      ru: 'Укладка: французская ракушка'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
     id: 'nails-pink-pedicure',
     image: '/gallery/nails-pink-pedicure.webp',
     category: 'nails',
