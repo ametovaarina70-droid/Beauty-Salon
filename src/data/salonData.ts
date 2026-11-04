@@ -399,6 +399,62 @@ export const INITIAL_GALLERY: GalleryPost[] = [
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
   },
   {
+    id: 'hair-layered-blonde-highlights',
+    image: '/gallery/hair-layered-blonde-highlights.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Vrstvený střih s béžovými melíry',
+      en: 'Layered cut with beige blonde highlights',
+      ru: 'Многослойная стрижка с бежевым мелированием'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'hair-caramel-highlights',
+    image: '/gallery/hair-caramel-highlights.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Karamelové melíry na tmavé bázi',
+      en: 'Caramel highlights on a dark base',
+      ru: 'Карамельное мелирование на тёмной базе'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'hair-creamy-blonde-layers',
+    image: '/gallery/hair-creamy-blonde-layers.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Krémová blond s měkkými vrstvami',
+      en: 'Creamy blonde with soft layers',
+      ru: 'Кремовый блонд с мягкими слоями'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'hair-toning-process',
+    image: '/gallery/hair-toning-process.webp',
+    category: 'hair',
+    caption: {
+      cs: 'Tónování: lesk a čistý odstín',
+      en: 'Toning: gloss and a clean tone',
+      ru: 'Тонирование: блеск и чистый оттенок'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
     id: 'nails-pink-pedicure',
     image: '/gallery/nails-pink-pedicure.webp',
     category: 'nails',
