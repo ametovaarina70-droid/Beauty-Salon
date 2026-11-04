@@ -636,25 +636,11 @@ export const SalonChatbot: React.FC<SalonChatbotProps> = ({
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-40 group flex items-center gap-3 bg-[#1C1917] text-[#FAF8F5] pl-4 pr-5 py-3.5 rounded-full shadow-2xl hover:shadow-black/20 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer border border-[#FAF8F5]/15"
-          aria-label="Open AI Concierge Chat"
+          className="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-[#1C1917] text-[#FAF8F5] flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-transform cursor-pointer"
+          aria-label={t.chat.launcherText}
+          title={t.chat.launcherText}
         >
-          <div className="relative">
-            <div className="w-8 h-8 rounded-full bg-[#E7DED3] text-[#1C1917] flex items-center justify-center font-serif font-bold text-sm">
-              <Sparkles className="w-4 h-4 text-[#1C1917]" />
-            </div>
-            {unreadCount > 0 && (
-              <span className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border-2 border-[#1C1917]" />
-            )}
-          </div>
-          <div className="text-left">
-            <div className="text-xs font-medium tracking-wide uppercase text-[#E7DED3]">
-              {t.chat.launcherText}
-            </div>
-            <div className="text-[11px] text-stone-300 font-normal">
-              {language === 'cs' ? 'Odpovídá ihned' : language === 'ru' ? 'Отвечает мгновенно' : 'Online now'}
-            </div>
-          </div>
+          <Sparkles className="w-5 h-5" />
         </button>
       )}
 
