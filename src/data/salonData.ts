@@ -45,7 +45,7 @@ export interface GalleryPost {
     en: string;
     ru: string;
   };
-  category: 'hair' | 'nails' | 'face' | 'brows';
+  category: 'hair' | 'styling' | 'nails' | 'face' | 'brows';
   likes: number;
   comments: number;
   timestamp: string;
@@ -343,62 +343,6 @@ export const SALON_MASTERS: MasterSpecialist[] = [
 
 export const INITIAL_GALLERY: GalleryPost[] = [
   {
-    id: 'hair-balayage-soft',
-    image: '/gallery/hair-balayage-soft.webp',
-    category: 'hair',
-    caption: {
-      cs: 'Jemný balayage na tmavě plavé bázi',
-      en: 'Soft balayage on a dark blonde base',
-      ru: 'Мягкий балаяж на тёмно-русой базе'
-    },
-    likes: 0,
-    comments: 0,
-    timestamp: '',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
-    id: 'hair-blonde-bob',
-    image: '/gallery/hair-blonde-bob.webp',
-    category: 'hair',
-    caption: {
-      cs: 'Béžová blond s jemným kořínkem, rovný střih',
-      en: 'Beige blonde with a soft root, sleek lob',
-      ru: 'Бежевый блонд с мягким корнем, удлинённое каре'
-    },
-    likes: 0,
-    comments: 0,
-    timestamp: '',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
-    id: 'hair-brunette-curtain-bangs',
-    image: '/gallery/hair-brunette-curtain-bangs.webp',
-    category: 'hair',
-    caption: {
-      cs: 'Vrstvený střih s ofinou, čokoládová brunetka',
-      en: 'Layered cut with curtain bangs, deep brunette',
-      ru: 'Многослойная стрижка с шторкой, глубокий брюнет'
-    },
-    likes: 0,
-    comments: 0,
-    timestamp: '',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
-    id: 'hair-chocolate-waves',
-    image: '/gallery/hair-chocolate-waves.webp',
-    category: 'hair',
-    caption: {
-      cs: 'Objemový styling, čokoládový odstín',
-      en: 'Voluminous blowout waves, chocolate shade',
-      ru: 'Объёмная укладка волнами, шоколадный оттенок'
-    },
-    likes: 0,
-    comments: 0,
-    timestamp: '',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
     id: 'hair-layered-blonde-highlights',
     image: '/gallery/hair-layered-blonde-highlights.webp',
     category: 'hair',
@@ -457,7 +401,7 @@ export const INITIAL_GALLERY: GalleryPost[] = [
   {
     id: 'hair-styling-hollywood-waves-blonde',
     image: '/gallery/hair-styling-hollywood-waves-blonde.webp',
-    category: 'hair',
+    category: 'styling',
     caption: {
       cs: 'Styling: hollywoodské vlny',
       en: 'Styling: Hollywood waves',
@@ -471,7 +415,7 @@ export const INITIAL_GALLERY: GalleryPost[] = [
   {
     id: 'hair-styling-volume-blowout-bw',
     image: '/gallery/hair-styling-volume-blowout-bw.webp',
-    category: 'hair',
+    category: 'styling',
     caption: {
       cs: 'Styling: objemové foukání',
       en: 'Styling: voluminous blowout',
@@ -485,7 +429,7 @@ export const INITIAL_GALLERY: GalleryPost[] = [
   {
     id: 'hair-styling-soft-waves-brunette',
     image: '/gallery/hair-styling-soft-waves-brunette.webp',
-    category: 'hair',
+    category: 'styling',
     caption: {
       cs: 'Styling: měkké vlny na tmavých vlasech',
       en: 'Styling: soft waves on brunette hair',
@@ -499,7 +443,7 @@ export const INITIAL_GALLERY: GalleryPost[] = [
   {
     id: 'hair-styling-french-twist',
     image: '/gallery/hair-styling-french-twist.webp',
-    category: 'hair',
+    category: 'styling',
     caption: {
       cs: 'Styling: francouzský drdol',
       en: 'Styling: French twist',
@@ -508,48 +452,6 @@ export const INITIAL_GALLERY: GalleryPost[] = [
     likes: 0,
     comments: 0,
     timestamp: '',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
-    id: 'nails-pink-pedicure',
-    image: '/gallery/nails-pink-pedicure.webp',
-    category: 'nails',
-    caption: {
-      cs: 'Pedikúra s jemně růžovým lakem',
-      en: 'Pedicure in soft blush pink',
-      ru: 'Педикюр с нежно-розовым покрытием'
-    },
-    likes: 0,
-    comments: 0,
-    timestamp: '',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
-    id: 'ig-post-3',
-    image: 'https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1000&q=85',
-    category: 'brows',
-    caption: {
-      cs: 'Laminace obočí a hybridní tónování bez tmavých grafických linek. Přirozenost nade vše. #browprague',
-      en: 'Feathery brow lamination & custom hybrid tint. No harsh lines, just natural grace. #browprague',
-      ru: 'Воздушная ламинация бровей без эффекта прилизанности. Мягкий оттенок под тон корней. #бровипрага'
-    },
-    likes: 298,
-    comments: 18,
-    timestamp: '1d ago',
-    instagramUrl: 'https://instagram.com/atelier.luma.prague'
-  },
-  {
-    id: 'ig-post-4',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=85',
-    category: 'face',
-    caption: {
-      cs: 'HydraFacial Glow protokol. Pleť vyčištěná, hydratovaná a zářící ještě před důležitým večerem v Rudolfinu. #facialsprague',
-      en: 'HydraFacial Glow ritual results. Clean, plumped, radiant skin ready for Prague Philharmonic gala. #facialsprague',
-      ru: 'Результат ухода HydraFacial: сияющая, наполненная влагой кожа без единого покраснения. #косметологпрага'
-    },
-    likes: 521,
-    comments: 42,
-    timestamp: '2d ago',
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
   }
 ];

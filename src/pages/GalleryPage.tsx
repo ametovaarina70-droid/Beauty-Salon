@@ -14,11 +14,12 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onNavigateToBooking })
 
   const categories = [
     { key: 'all', label: t.gallery.filterAll },
-    { key: 'hair', label: t.services.categories.hair },
+    { key: 'hair', label: language === 'cs' ? 'Barvení a střihy' : language === 'ru' ? 'Окрашивание и стрижки' : 'Colour & Cuts' },
+    { key: 'styling', label: language === 'cs' ? 'Účesy' : language === 'ru' ? 'Укладки' : 'Styling' },
     { key: 'nails', label: t.services.categories.nails },
     { key: 'face', label: t.services.categories.face },
     { key: 'brows', label: t.services.categories.brows },
-  ];
+  ].filter((cat) => cat.key === 'all' || INITIAL_GALLERY.some((p) => p.category === cat.key));
 
   const posts = INITIAL_GALLERY.filter(
     (post) => selectedCategory === 'all' || post.category === selectedCategory,
