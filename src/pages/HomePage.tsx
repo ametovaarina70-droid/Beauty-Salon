@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { ArrowUpRight, Sparkles, MapPin, CheckCircle2, Star, Clock, ChevronRight, ShieldCheck, Heart } from 'lucide-react';
+import { ArrowUpRight, Star, ChevronRight, Heart } from 'lucide-react';
 import { SALON_SERVICES, INITIAL_GALLERY } from '../data/salonData';
 
 interface HomePageProps {
@@ -46,38 +46,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
         </div>
 
-        {/* 3 Value Pillars Centered */}
-        <div className="pt-12 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
-          <div className="space-y-1">
-            <div className="text-xs font-bold tracking-wider uppercase text-stone-900 flex items-center justify-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-[#8C7A6B]" />
-              Vinohrady
-            </div>
-            <p className="text-xs text-stone-500 leading-relaxed max-w-xs mx-auto">
-              {t.hero.features.location}
-            </p>
-          </div>
-
-          <div className="space-y-1">
-            <div className="text-xs font-bold tracking-wider uppercase text-stone-900 flex items-center justify-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-[#8C7A6B]" />
-              {language === 'cs' ? 'Kosmetika' : language === 'ru' ? 'Премиум уход' : 'Rituals'}
-            </div>
-            <p className="text-xs text-stone-500 leading-relaxed max-w-xs mx-auto">
-              {t.hero.features.premium}
-            </p>
-          </div>
-
-          <div className="space-y-1">
-            <div className="text-xs font-bold tracking-wider uppercase text-stone-900 flex items-center justify-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#8C7A6B]" />
-              {language === 'cs' ? 'Jazyky' : language === 'ru' ? 'Языки' : 'Languages'}
-            </div>
-            <p className="text-xs text-stone-500 leading-relaxed max-w-xs mx-auto">
-              {t.hero.features.multilingual}
-            </p>
-          </div>
-        </div>
       </section>
 
       {/* Featured Services Preview */}
