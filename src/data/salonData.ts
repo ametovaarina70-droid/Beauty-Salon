@@ -579,6 +579,62 @@ export const INITIAL_GALLERY: GalleryPost[] = [
     comments: 0,
     timestamp: '',
     instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'face-foam-cleansing',
+    image: '/gallery/face-foam-cleansing.webp',
+    category: 'face',
+    caption: {
+      cs: 'Jemné pěnové čištění pleti',
+      en: 'Gentle foam cleanse',
+      ru: 'Мягкое очищение кожи пенкой'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'face-ultrasonic-cleansing',
+    image: '/gallery/face-ultrasonic-cleansing.webp',
+    category: 'face',
+    caption: {
+      cs: 'Ultrazvukové čištění pleti',
+      en: 'Ultrasonic skin cleansing',
+      ru: 'Ультразвуковая чистка лица'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'face-hot-towel-compress',
+    image: '/gallery/face-hot-towel-compress.webp',
+    category: 'face',
+    caption: {
+      cs: 'Teplý obklad ručníkem',
+      en: 'Warm towel compress',
+      ru: 'Тёплый компресс полотенцем'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
+  },
+  {
+    id: 'face-darsonval',
+    image: '/gallery/face-darsonval.webp',
+    category: 'face',
+    caption: {
+      cs: 'Darsonvalizace přes gázovou masku',
+      en: 'High-frequency treatment through a gauze mask',
+      ru: 'Дарсонвализация через марлевую маску'
+    },
+    likes: 0,
+    comments: 0,
+    timestamp: '',
+    instagramUrl: 'https://instagram.com/atelier.luma.prague'
   }
 ];
 
