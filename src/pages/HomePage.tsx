@@ -46,36 +46,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
         </div>
 
-        {/* Hero Visual Banner */}
-        <div className="mt-12 max-w-5xl mx-auto relative">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[16/9] sm:aspect-[21/9] bg-stone-100">
-            <img
-              src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1600&q=85"
-              alt="Atelier Luma Hair Artistry Prague"
-              className="w-full h-full object-cover object-[center_35%]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-
-            {/* Float badge */}
-            <div className="absolute bottom-5 left-5 sm:bottom-8 sm:left-8 right-5 sm:right-auto sm:max-w-md p-4 rounded-2xl bg-white/95 backdrop-blur border border-white/40 shadow-lg flex items-center justify-between gap-4">
-              <div>
-                <div className="text-[11px] font-bold uppercase tracking-wider text-stone-900">
-                  Airtouch Signature
-                </div>
-                <div className="text-xs text-stone-500">
-                  {language === 'cs' ? 'Špičkový salonní rituál' : language === 'ru' ? 'Фирменная техника выдува' : 'Masterpiece lightening'}
-                </div>
-              </div>
-              <button
-                onClick={() => onNavigate('booking', 'airtouch-signature')}
-                className="px-3.5 py-1.5 bg-[#1C1917] text-white rounded-lg text-xs font-semibold hover:bg-stone-800 transition cursor-pointer shrink-0"
-              >
-                {t.services.bookNow}
-              </button>
-            </div>
-          </div>
-        </div>
-
         {/* 3 Value Pillars Centered */}
         <div className="pt-12 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
           <div className="space-y-1">

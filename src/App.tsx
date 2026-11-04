@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -10,22 +10,50 @@ import { BookingPage } from './pages/BookingPage';
 import { TeamPage } from './pages/TeamPage';
 import { ContactsPage } from './pages/ContactsPage';
 
-function SalonApp() {
-  const [currentPage, setCurrentPage] = useState<string>('home');
-  const [selectedServiceId, setSelectedServiceId] = useState<string | undefined>(undefined);
+const PAGES = ['home', 'services', 'gallery', 'booking', 'team', 'contacts'];
 
-  const handleNavigate = (page: string, serviceId?: string) => {
-    setCurrentPage(page);
-    if (serviceId) {
-      setSelectedServiceId(serviceId);
+function pageFromPath(pathname: string): string {
+  const slug = pathname.replace(/^\/+|\/+$/g, '');
+  return PAGES.includes(slug) ? slug : 'home';
+}
+
+function pathFromPage(page: string): string {
+  return page === 'home' ? '/' : `/${page}`;
+}
+
+function SalonApp() {
+  const [currentPage, setCurrentPage] = useState<string>(() => pageFromPath(window.location.pathname));
+  const [selectedServiceId, setSelectedServiceId] = useState<string | undefined>(
+    () => window.history.state?.serviceId,
+  );
+
+  // Browser Back/Forward buttons: restore the page stored in the URL
+  useEffect(() => {
+    const onPopState = (event: PopStateEvent) => {
+      setCurrentPage(pageFromPath(window.location.pathname));
+      setSelectedServiceId(event.state?.serviceId);
+      window.scrollTo({ top: 0 });
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  const goTo = (page: string, serviceId?: string) => {
+    const path = pathFromPage(page);
+    if (page !== currentPage || serviceId !== selectedServiceId) {
+      window.history.pushState({ page, serviceId }, '', path);
     }
+    setCurrentPage(page);
+    setSelectedServiceId(serviceId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleNavigate = (page: string, serviceId?: string) => {
+    goTo(page, serviceId ?? (page === 'booking' ? selectedServiceId : undefined));
+  };
+
   const handleNavigateToBooking = (serviceId?: string) => {
-    setSelectedServiceId(serviceId);
-    setCurrentPage('booking');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    goTo('booking', serviceId);
   };
 
   return (
